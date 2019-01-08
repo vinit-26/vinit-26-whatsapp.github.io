@@ -1,0 +1,750 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/ico" href="icon/WhatsApp-icon.png"/>
+    <title>WhatsApp Web</title>
+    <meta name="description" content="Whatsapp for Web" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+</head>
+
+<body>
+    <div class="container-fluid ">
+        <div class="row main-row">
+            <div class="col-sm-4 side-chat-list">
+                <div class="row heading">
+                    <div class="col heading-profile">
+                        <img src="icon/1.png" class="rounded-circle images" data-toggle="modal" data-target="#exampleModalCenter">
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="height: auto">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">Profile</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card text-center">
+                                            <div class="card-header prof-image">
+                                                <img src="icon/1.png" class="rounded-circle image-modal">
+                                                <div class="middle">
+                                                    <div class="text">Change picture</div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body ">
+                                                <h5 class="card-title">Vinit Kumar</h5>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <span class="float-left">9102539102</span>
+                                                    <span class="float-right">
+                                                        <i class="material-icons">call</i>
+                                                    </span>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <span class="float-left">
+                                                        <a href="mailto:ankit090592@gmail.com?Subject=Hi%20from%20WhatsApp." target="_top">vinitkumar7070@gmail.com</a>
+                                                    </span>
+                                                    <span class="float-right">
+                                                        <i class="material-icons">email</i>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <div class="card-footer text-muted">
+                                                <span class="float-left">Hey there! I am using WhatsApp.</span>
+                                                <span class="float-right">
+                                                    Last updated: 3d ago
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col heading-newMessage">
+                        <i class="material-icons md-dark md-36 float-right">camera</i>
+                    </div>
+                    <div class="col heading-newMessage">
+                        <i class="material-icons md-dark md-36 float-right">speaker_notes</i>
+                    </div>
+                    <div class="col heading-menu">
+                        <i class="material-icons md-dark md-36 float-right " href="#" role="button">more_vert</i>
+                    </div>
+                </div>
+
+                <div class="row heading" style="background: #dcdedf">
+                    <div class="col-auto heading-profile">
+                        <img src="icon/bell.png" class="rounded-circle images">
+                    </div>
+                    <div class="col heading-newMessage">
+                        Click
+                        <a href="#" class="alert-link" data-toggle="modal" data-target="#exampleModal">here</a> to turn on desktop notification.
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document" style="height: auto;">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Notification</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Desktop notification turned on!
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="row sideBar">
+
+                    <!-- Mobile -->
+                    <a href="main-chat-window.html" class="d-flex d-sm-none chat-window-link" style="width: 100%">
+                        <div class="row sideBar-body">
+
+                            <div class="col-auto sideBar-avatar">
+
+                                <img src="avatar/boy-1.png" class="rounded-circle sideNav-images">
+
+                            </div>
+
+                            <div class="col-auto">
+                                <span>Vinit</span>
+                                <p class="card-text">
+                                    <small class="text-muted">Hey! I'm fine.</small>
+                                </p>
+                            </div>
+                            <div class="col float-right">
+                                <small class="text-muted float-right text-secondary">12:43
+                                </small>
+
+                            </div>
+
+                        </div>
+                    </a>
+                    <!-- Web -->
+                    <div class="d-none d-sm-flex row sideBar-body">
+                        <div class="col-auto sideBar-avatar">
+                            <img src="avatar/boy-1.png" class="rounded-circle sideNav-images">
+
+                        </div>
+
+                        <div class="col-auto">
+                            <span>Vinit</span>
+                            <p class="card-text">
+                                <small class="text-muted">Hey! I'm fine.</small>
+                            </p>
+                        </div>
+                        <div class="col float-right">
+                            <small class="text-muted float-right text-secondary">12:43
+                            </small>
+
+                        </div>
+                    </div>
+
+                    <!-- Mobile -->
+                    <a href="main-chat-window.html" class="d-flex d-sm-none chat-window-link" style="width: 100%">
+                        <div class="row sideBar-body">
+
+                            <div class="col-auto sideBar-avatar">
+
+                                <img src="avatar/boy-2.png" class="rounded-circle sideNav-images">
+
+                            </div>
+
+                            <div class="col-auto">
+                                <span>Manu</span>
+                                <p class="card-text">
+                                    <small class="text-muted">Hey! I'm fine.</small>
+                                </p>
+                            </div>
+                            <div class="col float-right">
+                                <small class="text-muted float-right text-secondary">12:43
+                                </small>
+
+                            </div>
+
+                        </div>
+                    </a>
+                    <!-- Web -->
+                    <div class="d-none d-sm-flex row sideBar-body">
+                        <div class="col-auto sideBar-avatar">
+                            <img src="avatar/boy-2.png" class="rounded-circle sideNav-images">
+
+                        </div>
+
+                        <div class="col-auto">
+                            <span>Manu</span>
+                            <p class="card-text">
+                                <small class="text-muted">Hey! I'm fine.</small>
+                            </p>
+                        </div>
+                        <div class="col float-right">
+                            <small class="text-muted float-right text-secondary">12:43
+                            </small>
+
+                        </div>
+                    </div>
+
+                    <!-- Mobile -->
+                    <a href="main-chat-window.html" class="d-flex d-sm-none chat-window-link" style="width: 100%">
+                        <div class="row sideBar-body">
+
+                            <div class="col-auto sideBar-avatar">
+
+                                <img src="avatar/boy-3.png" class="rounded-circle sideNav-images">
+
+                            </div>
+
+                            <div class="col-auto">
+                                <span>Tom</span>
+                                <p class="card-text">
+                                    <small class="text-muted">Hey! I'm fine.</small>
+                                </p>
+                            </div>
+                            <div class="col float-right">
+                                <small class="text-muted float-right text-secondary">12:43
+                                </small>
+
+                            </div>
+
+                        </div>
+                    </a>
+                    <!-- Web -->
+                    <div class="d-none d-sm-flex row sideBar-body">
+                        <div class="col-auto sideBar-avatar">
+                            <img src="avatar/boy-3.png" class="rounded-circle sideNav-images">
+
+                        </div>
+
+                        <div class="col-auto">
+                            <span>Tom</span>
+                            <p class="card-text">
+                                <small class="text-muted">Hey! I'm fine.</small>
+                            </p>
+                        </div>
+                        <div class="col float-right">
+                            <small class="text-muted float-right text-secondary">12:43
+                            </small>
+
+                        </div>
+                    </div>
+
+                    <!-- Mobile -->
+                    <a href="main-chat-window.html" class="d-flex d-sm-none chat-window-link" style="width: 100%">
+                        <div class="row sideBar-body">
+
+                            <div class="col-auto sideBar-avatar">
+
+                                <img src="avatar/girl.png" class="rounded-circle sideNav-images">
+
+                            </div>
+
+                            <div class="col-auto">
+                                <span>Juli</span>
+                                <p class="card-text">
+                                    <small class="text-muted">Hey! I'm fine.</small>
+                                </p>
+                            </div>
+                            <div class="col float-right">
+                                <small class="text-muted float-right text-secondary">12:43
+                                </small>
+
+                            </div>
+
+                        </div>
+                    </a>
+                    <!-- Web -->
+                    <div class="d-none d-sm-flex row sideBar-body">
+                        <div class="col-auto sideBar-avatar">
+                            <img src="avatar/girl.png" class="rounded-circle sideNav-images">
+
+                        </div>
+
+                        <div class="col-auto">
+                            <span>Juli</span>
+                            <p class="card-text">
+                                <small class="text-muted">Hey! I'm fine.</small>
+                            </p>
+                        </div>
+                        <div class="col float-right">
+                            <small class="text-muted float-right text-secondary">12:43
+                            </small>
+
+                        </div>
+                    </div>
+
+                    <!-- Mobile -->
+                    <a href="main-chat-window.html" class="d-flex d-sm-none chat-window-link" style="width: 100%">
+                        <div class="row sideBar-body">
+
+                            <div class="col-auto sideBar-avatar">
+
+                                <img src="avatar/girl-3.png" class="rounded-circle sideNav-images">
+
+                            </div>
+
+                            <div class="col-auto">
+                                <span>Sofee</span>
+                                <p class="card-text">
+                                    <small class="text-muted">Hey! I'm fine.</small>
+                                </p>
+                            </div>
+                            <div class="col float-right">
+                                <small class="text-muted float-right text-secondary">12:43
+                                </small>
+
+                            </div>
+
+                        </div>
+                    </a>
+                    <!-- Web -->
+                    <div class="d-none d-sm-flex row sideBar-body">
+                        <div class="col-auto sideBar-avatar">
+                            <img src="avatar/girl-3.png" class="rounded-circle sideNav-images">
+
+                        </div>
+
+                        <div class="col-auto">
+                            <span>Sofee</span>
+                            <p class="card-text">
+                                <small class="text-muted">Hey! I'm fine.</small>
+                            </p>
+                        </div>
+                        <div class="col float-right">
+                            <small class="text-muted float-right text-secondary">12:43
+                            </small>
+
+                        </div>
+                    </div>
+
+                    <!-- Mobile -->
+                    <a href="main-chat-window.html" class="d-flex d-sm-none chat-window-link" style="width: 100%">
+                        <div class="row sideBar-body">
+
+                            <div class="col-auto sideBar-avatar">
+
+                                <img src="avatar/girl-4.png" class="rounded-circle sideNav-images">
+
+                            </div>
+
+                            <div class="col-auto">
+                                <span>Julia</span>
+                                <p class="card-text">
+                                    <small class="text-muted">Hey! I'm fine.</small>
+                                </p>
+                            </div>
+                            <div class="col float-right">
+                                <small class="text-muted float-right text-secondary">12:43
+                                </small>
+
+                            </div>
+
+                        </div>
+                    </a>
+                    <!-- Web -->
+                    <div class="d-none d-sm-flex row sideBar-body">
+                        <div class="col-auto sideBar-avatar">
+                            <img src="avatar/girl-4.png" class="rounded-circle sideNav-images">
+
+                        </div>
+
+                        <div class="col-auto">
+                            <span>Julia</span>
+                            <p class="card-text">
+                                <small class="text-muted">Hey! I'm fine.</small>
+                            </p>
+                        </div>
+                        <div class="col float-right">
+                            <small class="text-muted float-right text-secondary">12:43
+                            </small>
+
+                        </div>
+                    </div>
+
+                    <!-- Mobile -->
+                    <a href="main-chat-window.html" class="d-flex d-sm-none chat-window-link" style="width: 100%">
+                        <div class="row sideBar-body">
+
+                            <div class="col-auto sideBar-avatar">
+
+                                <img src="avatar/boy-4.png" class="rounded-circle sideNav-images">
+
+                            </div>
+
+                            <div class="col-auto">
+                                <span>Roji</span>
+                                <p class="card-text">
+                                    <small class="text-muted">Hey! I'm fine.</small>
+                                </p>
+                            </div>
+                            <div class="col float-right">
+                                <small class="text-muted float-right text-secondary">12:43
+                                </small>
+
+                            </div>
+
+                        </div>
+                    </a>
+                    <!-- Web -->
+                    <div class="d-none d-sm-flex row sideBar-body">
+                        <div class="col-auto sideBar-avatar">
+                            <img src="avatar/boy-4.png" class="rounded-circle sideNav-images">
+
+                        </div>
+
+                        <div class="col-auto">
+                            <span>Roji</span>
+                            <p class="card-text">
+                                <small class="text-muted">Hey! I'm fine.</small>
+                            </p>
+                        </div>
+                        <div class="col float-right">
+                            <small class="text-muted float-right text-secondary">12:43
+                            </small>
+
+                        </div>
+                    </div>
+
+                    <!-- Mobile -->
+                    <a href="main-chat-window.html" class="d-flex d-sm-none chat-window-link" style="width: 100%">
+                        <div class="row sideBar-body">
+
+                            <div class="col-auto sideBar-avatar">
+
+                                <img src="avatar/girl-5.png" class="rounded-circle sideNav-images">
+
+                            </div>
+
+                            <div class="col-auto">
+                                <span>Beka</span>
+                                <p class="card-text">
+                                    <small class="text-muted">Hey! I'm fine.</small>
+                                </p>
+                            </div>
+                            <div class="col float-right">
+                                <small class="text-muted float-right text-secondary">12:43
+                                </small>
+
+                            </div>
+
+                        </div>
+                    </a>
+                    <!-- Web -->
+                    <div class="d-none d-sm-flex row sideBar-body">
+                        <div class="col-auto sideBar-avatar">
+                            <img src="avatar/girl-5.png" class="rounded-circle sideNav-images">
+
+                        </div>
+
+                        <div class="col-auto">
+                            <span>Beka</span>
+                            <p class="card-text">
+                                <small class="text-muted">Hey! I'm fine.</small>
+                            </p>
+                        </div>
+                        <div class="col float-right">
+                            <small class="text-muted float-right text-secondary">12:43
+                            </small>
+
+                        </div>
+                    </div>
+
+                    <!-- Mobile -->
+                    <a href="main-chat-window.html" class="d-flex d-sm-none chat-window-link" style="width: 100%">
+                        <div class="row sideBar-body">
+
+                            <div class="col-auto sideBar-avatar">
+
+                                <img src="avatar/boy.png" class="rounded-circle sideNav-images">
+
+                            </div>
+
+                            <div class="col-auto">
+                                <span>Thomas</span>
+                                <p class="card-text">
+                                    <small class="text-muted">Hey! I'm fine.</small>
+                                </p>
+                            </div>
+                            <div class="col float-right">
+                                <small class="text-muted float-right text-secondary">12:43
+                                </small>
+
+                            </div>
+
+                        </div>
+                    </a>
+                    <!-- Web -->
+                    <div class="d-none d-sm-flex row sideBar-body">
+                        <div class="col-auto sideBar-avatar">
+                            <img src="avatar/boy.png" class="rounded-circle sideNav-images">
+
+                        </div>
+
+                        <div class="col-auto">
+                            <span>Thomas</span>
+                            <p class="card-text">
+                                <small class="text-muted">Hey! I'm fine.</small>
+                            </p>
+                        </div>
+                        <div class="col float-right">
+                            <small class="text-muted float-right text-secondary">12:43
+                            </small>
+
+                        </div>
+                    </div>
+
+                    <!-- Mobile -->
+                    <a href="main-chat-window.html" class="d-flex d-sm-none chat-window-link" style="width: 100%">
+                        <div class="row sideBar-body">
+
+                            <div class="col-auto sideBar-avatar">
+
+                                <img src="avatar/boy-2.png" class="rounded-circle sideNav-images">
+
+                            </div>
+
+                            <div class="col-auto">
+                                <span>James</span>
+                                <p class="card-text">
+                                    <small class="text-muted">Hey! I'm fine.</small>
+                                </p>
+                            </div>
+                            <div class="col float-right">
+                                <small class="text-muted float-right text-secondary">12:43
+                                </small>
+
+                            </div>
+
+                        </div>
+                    </a>
+                    <!-- Web -->
+                    <div class="d-none d-sm-flex row sideBar-body">
+                        <div class="col-auto sideBar-avatar">
+                            <img src="avatar/boy-2.png" class="rounded-circle sideNav-images">
+
+                        </div>
+
+                        <div class="col-auto">
+                            <span>James</span>
+                            <p class="card-text">
+                                <small class="text-muted">Hey! I'm fine.</small>
+                            </p>
+                        </div>
+                        <div class="col float-right">
+                            <small class="text-muted float-right text-secondary">12:43
+                            </small>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-8 main-chat-window">
+                <!-- Heading -->
+                <div class="row heading">
+                    <div class="col-auto heading-profile">
+                        <img src="icon/1.png" class="rounded-circle images">
+
+                    </div>
+                    <div class="col heading-name">
+                        <span class="heading-name-meta">Vinit
+                            <p class="card-text">
+                                <small class="text-muted">Online</small>
+                            </p>
+                        </span>
+                    </div>
+                    <div class="col heading-menu float-right">
+                        <i class="material-icons md-36 md-dark float-right">more_vert</i>
+                    </div>
+                </div>
+
+                <!-- Chat Body -->
+                <div class="row message">
+                    <div class="row message-body">
+                        <div class="col-sm-12 message-main-receiver">
+                            <div class="receiver">
+                                <div class="message-text">
+                                    Hi, how are you?
+                                </div>
+                                <span class="message-time float-right">
+                                    10:46
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row message-body">
+                        <div class="col-sm-12 message-main-sender">
+                            <div class="sender">
+                                <div class="message-text">
+                                    Hey! I'm fine. What about you?
+                                </div>
+
+                                <span class="message-time float-right">
+                                    10:46
+                                    <i class="material-icons md-18 md-dark float-right pl-2 message-read">done_all</i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row message-body">
+                        <div class="col-sm-12 message-main-receiver">
+                            <div class="receiver">
+                                <div class="message-text">
+                                    Hi, how are you?
+                                </div>
+                                <span class="message-time float-right">
+                                    10:46
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row message-body">
+                        <div class="col-sm-12 message-main-sender">
+                            <div class="sender">
+                                <div class="message-text">
+                                    Hey! I'm fine. What about you?
+                                </div>
+                                <span class="message-time float-right">
+                                    10:46
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row message-body">
+                        <div class="col-sm-12 message-main-receiver">
+                            <div class="receiver">
+                                <div class="message-text">
+                                    Hi, how are you?
+                                </div>
+                                <span class="message-time float-right">
+                                    10:46
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row message-body">
+                        <div class="col-sm-12 message-main-sender">
+                            <div class="sender">
+                                <div class="message-text">
+                                    Hey! I'm fine. What about you?
+                                </div>
+                                <span class="message-time float-right">
+                                    10:46
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row message-body">
+                        <div class="col-sm-12 message-main-receiver">
+                            <div class="receiver">
+                                <div class="message-text">
+                                    Hi, how are you?
+                                </div>
+                                <span class="message-time float-right">
+                                    10:46
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row message-body">
+                        <div class="col-sm-12 message-main-sender">
+                            <div class="sender">
+                                <div class="message-text">
+                                    Hey! I'm fine. What about you?
+                                </div>
+                                <span class="message-time float-right">
+                                    10:46
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row message-body">
+                        <div class="col-sm-12 message-main-receiver">
+                            <div class="receiver">
+                                <div class="message-text">
+                                    Hi, how are you?
+                                </div>
+                                <span class="message-time float-right">
+                                    10:46
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row message-body">
+                        <div class="col-sm-12 message-main-sender">
+                            <div class="sender">
+                                <div class="message-text">
+                                    Hey! I'm fine. What about you?
+                                </div>
+                                <span class="message-time float-right">
+                                    10:46
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row reply">
+                    <div class="col-auto reply-smiley">
+                        <i class="material-icons md-dark md-36" data-toggle="popover" data-placement="top" data-container="row-message" data-content="ssds">insert_emoticon</i>
+
+                    </div>
+                    <div class="col input-group reply-text-box">
+                        <input type="text" class="form-control border-right-0" placeholder="Type a message..">
+                        <span class="input-group-append bg-white">
+                            <i class="material-icons md-36 md-dark mic-dark">mic</i>
+
+                        </span>
+                    </div>
+
+                    <div class="col-auto reply-send">
+                        <i class="material-icons md-dark md-36">send</i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
